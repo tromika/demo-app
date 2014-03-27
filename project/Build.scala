@@ -8,13 +8,13 @@ object ApplicationBuild extends Build {
     val appVersion      = "1.0"
 
     val appDependencies = Seq(
-  	 "com.etaty.rediscala" %% "rediscala" % "1.2"
+  	 "com.etaty.rediscala" %% "rediscala" % "1.3"
     )
 
    
 	
     val main = play.Project(appName, appVersion, appDependencies).settings(
-       resolvers += "rediscala" at "https://github.com/etaty/rediscala-mvn/raw/master/releases/"
+       resolvers += "rediscala" at "http://pk11-scratch.googlecode.com/svn/trunk/"
     )
 
 }
