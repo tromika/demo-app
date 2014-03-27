@@ -1,1 +1,5 @@
 Demo App
+
+you will need to install:
+- play 2.2.X http://www.playframework.com/download (classic distribution)
+- redis http://redis.io/download
