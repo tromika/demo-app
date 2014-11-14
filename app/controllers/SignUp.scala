@@ -21,7 +21,10 @@ object SignUp extends Controller {
     
     // Define a mapping that will handle User values
     mapping(
-      "username" -> text(minLength = 4),
+      "username" -> text(minLength = 4).verifying(
+          "Username should start with uppercase letter",
+          username => username.head.isUpper
+      ),
       "email" -> email,
       
       // Create a tuple mapping for the password/confirm
